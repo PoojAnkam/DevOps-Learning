@@ -10,4 +10,4 @@
 
  [mywebserver:vars]
  myopenjdk8forubuntu = openjdk-8-jre
- myopenjdk8forubuntu = java-1.8.0-openjdk
+ myopenjdk8forRedHat = java-1.8.0-openjdk
