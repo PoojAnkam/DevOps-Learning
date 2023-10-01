@@ -1,9 +1,9 @@
-[mywebservers]
+[mywebserver]
 172.31.88.40
 172.31.87.97
 
 
- [mydbservers]
+ [mydbserver]
  172.31.87.98
  172.31.87.99
  172.31.87.95 
