@@ -14,11 +14,11 @@
        apt: 
           name: git
           state: present
-       when: myResult.stderr != ""
+       when: myResult.stderr != " "
 
        
      - name: i want to install git
        apt: 
-          name: wgit
+          name: wget
           state: present
-       when: myResult.stderr == ""   
+       when: myResult.stderr == " "   
