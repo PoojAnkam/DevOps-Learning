@@ -1,6 +1,6 @@
 --- 
 - hosts: mywebserver
-  becomes: yes
+  become: yes
   vars:
       myvar1: git
       myvar2: tree
