@@ -17,7 +17,7 @@
        when: myResult.stderr == " "
 
        
-     - name: i want to install git
+     - name: i want to install wget
        apt: 
           name: wget
           state: present
