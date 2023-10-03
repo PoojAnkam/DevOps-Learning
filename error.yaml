@@ -22,4 +22,4 @@
        apt: 
           name: wget
           state: present
-        when: myResult.stderr != ""    
+       when: myResult.stderr != ""    
