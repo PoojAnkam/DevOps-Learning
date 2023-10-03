@@ -9,6 +9,6 @@
 
           - name: i want to replace apache2 template with our jinga template
             template: 
-                 dest: index.html 
-                 src: myindex.j2
+                 dest: myindex.j2
+                 src: index.html 
                  
