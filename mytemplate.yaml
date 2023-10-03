@@ -9,7 +9,7 @@
 
           - name: i want to replace apache2 template with our jinga template
             template:
-                 src: myindex.j2 
-                 dest: /var/www/html/index.html
+                 src: /var/www/html/index.html
+                 dest: myindex.j2
                  
                  
