@@ -5,11 +5,11 @@
           - name: i want to install apache2 on ubuntu 
             apt:
                     name: apache2
-                    state: present
+                    state: absent
 
           - name: i want to replace apache2 template with our jinga template
             template:
-                 src: index.html 
-                 dest: /var/www/html/myindex.j2
+                 src: myindex.j2 
+                 dest: /var/www/html/index.html
                  
                  
