@@ -9,5 +9,5 @@
 
           - name: i want to replace apache2 template with our jinga template
             template: 
-                 src: myindex.j2
+                 src: dynamicdata.j2
                  dest:  /var/www/html/index.html
