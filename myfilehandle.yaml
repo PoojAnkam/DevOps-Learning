@@ -5,6 +5,6 @@
    - include_tasks: mynewfile.yaml
 
    - name: i wnat to install tree 
-      apt: 
+     apt: 
          name: tree
          state: present
