@@ -7,9 +7,9 @@
        register: myResult
 
      - name: i want to display result of linux command
-       debugg: 
+       debug: 
          msg: "{{myResult}}" 
-       
+       ignore_errors: yes 
 
      - name: i want to install git
        apt: 
