@@ -8,7 +8,8 @@
                     state: present
 
           - name: i want to replace apache2 template with our jinga template
-            template: 
-                 dest: myindex.j2
+            template:
                  src: index.html 
+                 dest: /var/www/html/myindex.j2
+                 
                  
