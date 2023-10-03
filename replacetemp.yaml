@@ -2,19 +2,19 @@
 - hosts: 172.31.88.40
   become: yes
   tasks:
-          - name: i want to install apache2 on ubuntu 
+      - name: i want to install apache2 on ubuntu 
             apt:
                     name: apache2
                     state: present
 
-          - name: i want to replace apache2 template with our jinga template
-            template:
+      - name: i want to replace apache2 template with our jinga template
+        template:
                  src: myindex.j2
                  dest: /var/www/html/index.html
-            notify: restartwebsever
+        notify: restartwebsever
 
-            handlers: 
-               - name: restartwebsever 
-                 service: 
-                       name: apache2 
-                       state: present     
+        handlers: 
+      - name: restartwebsever 
+        service: 
+                 name: apache2 
+                 state: present     
