@@ -1,0 +1,8 @@
+--- 
+- hosts: 172.31.88.40
+  become: yes
+  tasks: 
+    - name: i want to create a filr in a ubuntu server
+      file:
+         path: /home/pooja/mynewfile
+         state: touch
