@@ -11,5 +11,10 @@
             template:
                  src: myindex.j2
                  dest: /var/www/html/index.html
-                 
-                 
+            notify: restartwebsever
+
+            handlers: 
+               - name: restartwebsever 
+                 service: 
+                       name: apache2 
+                       state: present     
