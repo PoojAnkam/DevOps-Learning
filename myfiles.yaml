@@ -4,5 +4,5 @@
   tasks: 
     - name: i want to create a filr in a ubuntu server
       file:
-         push: /home/pooja/mytestfile
+         path: /home/pooja/mytestfile
          state: touch
