@@ -4,18 +4,19 @@
   tasks:
       - name: i want to install apache2 on ubuntu 
         apt:
-                name: apache2
-                state: present
-        notify: restartwebsever        
+             name: apache2
+             state: present
+        notify: restartwebserver        
 
       - name: i want to replace apache2 template with our jinga template
         template:
-                 src: myindex.j2
-                 dest: /var/www/html/index.html
-        notify: restartwebsever
+             src: myindex.j2
+             dest: /var/www/html/index.html
+        notify: restartwebserver
 
         handlers: 
-      - name: restartwebsever 
+
+      - name: restartwebserver 
         service: 
-                 name: apache2 
-                 state: restarted     
+             name: apache2 
+             state: restarted     
