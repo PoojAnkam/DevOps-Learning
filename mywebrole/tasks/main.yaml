@@ -1,0 +1,13 @@
+---
+
+      - name: i want to install apache2 on ubuntu 
+        apt:
+             name: apache2
+             state: present
+        notify: restartwebserver        
+
+      - name: i want to replace apache2 template with our jinga template
+        template:
+             src: myindex.j2
+             dest: /var/www/html/index.html
+        notify: restartwebserver
