@@ -1,5 +1,5 @@
 --- 
--hosts: mywebserver
-become: yes
-roles: 
+- hosts: mywebserver
+  become: yes
+  roles: 
     - mywebrole
